@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { JokeComponent } from './joke/joke.component';
 import { TodoComponent } from './todo/todo.component';
+import { Joke2Component } from './joke2/joke2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JokeComponent,
     TodoComponent,
+    Joke2Component,
 
   ],
   imports: [
