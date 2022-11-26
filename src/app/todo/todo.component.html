@@ -1,0 +1,17 @@
+<div class="main">
+  <h1>My To Do List</h1>
+  <label >What would you like to do today?</label>
+
+  <input
+    #newItem
+    (keyup.enter)="AddItem(newItem.value); newItem.value = ''"/>
+
+  <button class="btn-primary" (click)="AddItem(newItem.value)">Add</button>
+
+  <ul>
+    <li *ngFor="let item of allItems;index as i">{{item.description}} -- {{item.done}}
+      <!--<button (click)="DeleteItem(i)">Delete</button> -->
+      </li>
+  </ul>
+</div>
+
